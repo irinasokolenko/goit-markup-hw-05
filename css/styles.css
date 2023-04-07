@@ -580,10 +580,27 @@ color:var(--fon-cloud-color)
  }
 .list-container{
     width: calc((100% - 48px) / 3); 
+    }
+.portfolio-cover-text{
+    position: absolute;
+    top: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #F4F4FD;
+    background-color: #4D5AE5;
+    padding: 40px;
+    height: 100%;
+    transform: translateY(100%);
+}
+.list-container:hover .portfolio-cover-text{
+    transform: translate(0);
+}
+.portfolio-cover-wrap{
+    position: relative;
 }
  .batton-roll{
     background-color: var(--fon-cloud-color);
-    
 }
  .batton-roll:hover, 
  .batton-roll:focus {
@@ -612,7 +629,7 @@ border-color:transparent;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--second-title-color);
-}
+
 .container-text{
     margin-top: 8px;
     text-align: left;
