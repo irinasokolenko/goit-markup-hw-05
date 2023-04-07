@@ -592,12 +592,16 @@ color:var(--fon-cloud-color)
     padding: 40px;
     height: 100%;
     transform: translateY(100%);
+    transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list-container:hover .portfolio-cover-text{
     transform: translate(0);
 }
 .portfolio-cover-wrap{
     position: relative;
+    overflow: hidden;
 }
  .batton-roll{
     background-color: var(--fon-cloud-color);
