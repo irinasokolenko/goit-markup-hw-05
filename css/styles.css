@@ -228,8 +228,6 @@ body {
  .hero-btn {
  padding: 16px 32px;
  min-width: 169px;
- height :56px;
- display: block;
  border-radius: 4px;
  margin:0 auto;
  font-family: inherit;
@@ -252,6 +250,31 @@ body {
 .hero-btn:hover,
 .hero-btn:focus { 
     background-color: var(--second-okean-color);
+}
+.modal{
+    width: 408px;
+    min-height: 576px;
+    background-color: #fcfcfc;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: 300ms linear;
+    padding: 24px;
+}
+.modal-close-btn{
+    display: flex;
+    margin-left: auto;
+    border-radius: 50%;
+    border: 1px solid rgba(0,0,0,0.1);
+    width: 24px;
+    height: 24px;
+    background-color: #E7E9FC;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    margin-left: auto;
 }
  /*section 2*/
  .abaut {
