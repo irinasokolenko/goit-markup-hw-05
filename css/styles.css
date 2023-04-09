@@ -471,7 +471,7 @@ padding-bottom: 32px;
 }
 .person-soc-icon{
     fill: #FFFFFF;
-    transition: background-color 250ms linear, fill 300ms linear;
+    transition: background-color 250ms linear, fill 250ms linear;
  }
  /*секция5*/
  .customers {
