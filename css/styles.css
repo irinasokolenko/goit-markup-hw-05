@@ -263,6 +263,19 @@ body {
     transition: 300ms linear;
     padding: 24px;
 }
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    transform: scaleY(1);
+    background-color: rgba(46, 47, 66, .4);
+    transition-property: opacity; visibility; transform;
+    transition-duration: 250ms;
+    transition-timing-function: (0.4, 0, 0.2, 1);
+}
 .modal-close-btn{
     display: flex;
     margin-left: auto;
@@ -275,7 +288,12 @@ body {
     align-items: center;
     display: block;
     margin-left: auto;
-}
+   }
+  .is-hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
  /*section 2*/
  .abaut {
  padding-top: 120px;
