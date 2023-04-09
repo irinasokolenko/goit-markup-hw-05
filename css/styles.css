@@ -202,6 +202,7 @@ body {
  background-position: center;
  background-size: cover;
  padding-top: 180px;
+ text-align: center;
  padding-bottom: 180px;
 }
  .hero-list {
@@ -229,7 +230,6 @@ body {
  padding: 16px 32px;
  min-width: 169px;
  border-radius: 4px;
- margin:0 auto;
  font-family: inherit;
  font-weight: 500;
  font-size: 16px;
@@ -241,7 +241,8 @@ body {
  border-radius: 4px;
  border-color: transparent;
  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
- }
+ text-align: center;
+}
  .hero-btn{
     transition-property: color;
     transition-duration: 250ms;
@@ -252,29 +253,31 @@ body {
     background-color: var(--second-okean-color);
 }
 .modal{
-    width: 408px;
-    min-height: 576px;
-    background-color: #fcfcfc;
-    border-radius: 4px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    transition: 300ms linear;
+    width: 408px;
+    min-height: 576px;
+    background: #FCFCFC;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
     padding: 24px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scaleY(0);
+  }
 .backdrop{
     position: fixed;
     top: 0;
     left: 0;
-    overflow: hidden;
     width: 100vw;
     height: 100vh;
-    transform: scaleY(1);
-    background-color: rgba(46, 47, 66, .4);
-    transition-property: opacity; visibility; transform;
-    transition-duration: 250ms;
-    transition-timing-function: (0.4, 0, 0.2, 1);
+    background-color: rgba(46, 47, 66, 0.4);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close-btn{
     display: flex;
