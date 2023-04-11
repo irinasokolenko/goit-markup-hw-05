@@ -170,8 +170,7 @@ body {
  transition-property: color;
     transition-duration: 250ms;
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
- 
-  }
+ }
 .header-adder-iten {
     font-size: 16px;
     line-height: 1.5;
@@ -204,7 +203,9 @@ body {
   background-color: #404BBF;
   border-radius: 2px;
 }
-
+.active-link{
+    color: #404BBF;
+}
 
  /*section 1*/
  .hero {
@@ -321,9 +322,7 @@ body {
     pointer-events: none;
  }
  .modal-icon{
-    background: #2E2F42;
-    background: #E7E9FC;
- border: 1px solid rgba(0, 0, 0, 0.1);
+
  }
  .modal-icon:hover,
  .modal-icon:focus{
