@@ -122,12 +122,6 @@ body {
  transition-duration: 250ms;
  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
  }
-.header-iten :hover {
-    color: #404bbf;
-}
-.header-item :focus {
-    color: #404bbf;
-}
 .header-link {
  font-weight: 500;
  font-size: 16px;
@@ -139,22 +133,19 @@ body {
     transition-duration: 250ms;
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-link :hover {
+.header-link:hover {
     color: #404bbf;
 }
-.header-link :focus {
+.header-link:focus {
     color: #404bbf;
 }
 .header-address {
     font-style: normal;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-address :hover {
+.header-address-link:hover{
     color: #404BBF;
 }
-.header-address :focus {
+.header-address-link:focus{
     color: #404BBF;
 }
 .header-address-list{
@@ -165,22 +156,16 @@ body {
  line-height: 1.5;
  letter-spacing: 0.02em;
  color: #434455;
+ transition-property: color;
+ transition-duration: 250ms;
+ transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
  }
 .header-address-iten {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-address-iten :hover {
-    color: #404BBF;
-}
-.header-address-iten :focus {
-    color: #404BBF;
- }
 .address-tel{
     margin-left: 40px;
 }
@@ -229,14 +214,6 @@ body {
  margin-right:auto; 
  text-align: center;
  max-width: 496px;
- transition-property: backgroud-color;
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
- }
-.hero-list 
- backgroud-color :hover,
- :focus {
-    color: var(--second-okean-color);
  }
  .hero-btn {
  padding: 16px 32px;
@@ -254,12 +231,11 @@ body {
  border-color: transparent;
  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
  text-align: center;
+ transition-property: background-color;
+ transition-duration: 250ms;
+ transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
- .hero-btn{
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
- }
+
 .hero-btn:hover,
 .hero-btn:focus { 
     background-color: var(--second-okean-color);
@@ -292,12 +268,13 @@ body {
 }
 .modal-close-btn{
     display: flex;
-    margin-left: auto;
+    position: absolute;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     width: 24px;
     height: 24px;
-    top: 0;
+    top: 24px;
+    right: 24px;
     border-radius: 50%;
    justify-content: center;
     align-items: center;
