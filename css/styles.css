@@ -572,8 +572,7 @@ color:var(--fon-cloud-color)
 }
  .social-media{
   margin-left: 120px;
-    
- }   
+}   
 .social-name{
     font-weight:500;
     font-size: 16px;
@@ -608,8 +607,6 @@ color:var(--fon-cloud-color)
   transition-property: background-color, border-color, color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
- }
- .batton-all{
  }
  .button-container{
     display: flex;
@@ -654,7 +651,6 @@ color:var(--fon-cloud-color)
 .list-link-link:focus .portfolio-cover-text{
     transform: translateY(0%);
 }
-
  .batton-roll{
     background-color: var(--fon-cloud-color);
 }
