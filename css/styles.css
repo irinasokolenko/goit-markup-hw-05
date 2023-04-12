@@ -280,7 +280,7 @@ body {
    justify-content: center;
     align-items: center;
     cursor: pointer;
-    transition-property: background-color;
+    transition-property: background-color, fill;
     transition-duration: 250ms;
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -491,7 +491,6 @@ padding-bottom: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-color: #404BBF;
     color: #8E8F99;
     transition-property: color, border-color;
     transition-duration: 250ms;
@@ -554,7 +553,7 @@ color:var(--fon-cloud-color)
     background-color:var(--main-title-color);
     transition-duration: 250ms;
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: border-color, background-color;
+    transition-property: background-color;
 }
 .footer-soc-link:hover,
 .footer-soc-link:focus{
